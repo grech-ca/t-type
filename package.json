@@ -15,8 +15,7 @@
     "@types/node": "^22.13.1",
     "@types/react": "^19.0.8",
     "@types/yargs": "^17.0.33",
-    "next-intl": "^3.26.3",
-    "tsx": "^4.19.2"
+    "next-intl": "^3.26.3"
   },
   "dependencies": {
     "@formatjs/icu-messageformat-parser": "^2.11.1",
