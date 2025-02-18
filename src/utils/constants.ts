@@ -14,6 +14,6 @@ export const Identifiers = {
   RichTranslationKeyParams: t.factory.createIdentifier('RichTranslationKeyParams')
 } as const
 
-export const MODULE_NAME = 't-type'
+export const MODULE_NAME = 'tenix'
 
 export const CONFIG_FILENAME = `${MODULE_NAME}.config.ts` as const

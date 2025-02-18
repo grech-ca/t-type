@@ -2,12 +2,12 @@ import fs from 'fs'
 import {factory, SyntaxKind, NodeFlags, createPrinter} from 'typescript'
 import path from 'path'
 import { logger } from './logger';
-import { TTypeConfig } from '../types/config';
+import { TenixConfig } from '../types/config';
 import { createImportNode } from './create-import-node';
 import { locateProjectRoot } from './locate-project-root';
 import { CONFIG_FILENAME, MODULE_NAME } from './constants';
 
-export async function createConfig(config: Partial<TTypeConfig>) {
+export async function createConfig(config: Partial<TenixConfig>) {
   const projectRoot = locateProjectRoot()
   
   if (!projectRoot) {
@@ -17,7 +17,7 @@ export async function createConfig(config: Partial<TTypeConfig>) {
 
   const configPath = path.join(projectRoot, CONFIG_FILENAME)
 
-  const importNode = createImportNode(MODULE_NAME, 'TTypeConfig')
+  const importNode = createImportNode(MODULE_NAME, 'TenixConfig')
 
   const configNode = factory.createExportDefault(
     factory.createSatisfiesExpression(
@@ -28,7 +28,7 @@ export async function createConfig(config: Partial<TTypeConfig>) {
         )),
         true,
       ),
-      factory.createTypeReferenceNode('TTypeConfig')
+      factory.createTypeReferenceNode('TenixConfig')
     )
   )
 

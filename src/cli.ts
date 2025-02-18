@@ -7,7 +7,7 @@ import { setup } from './commands/setup';
 import { resolveConfig } from './utils/resolve-config';
 
 yargsCli
-  .scriptName('t-type')
+  .scriptName('tenix')
   .usage('$0 <cmd> [args]')
   .command(
     ['setup'],

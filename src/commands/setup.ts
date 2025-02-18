@@ -4,11 +4,11 @@ import {confirm, input} from '@inquirer/prompts'
 
 import { logger } from '../utils/logger'
 import { Namespace } from '../types'
-import { TTypeConfig } from '../types/config'
+import { TenixConfig } from '../types/config'
 import { createConfig } from '../utils/create-config'
 
 export async function setup() {
-  const config: Partial<TTypeConfig> = {}
+  const config: Partial<TenixConfig> = {}
 
   const isLocal = await confirm({
     message: 'Is the translations source stored locally?',

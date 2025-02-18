@@ -1,8 +1,8 @@
 {
-  "name": "t-type",
+  "name": "tenix",
   "version": "0.1.0",
   "bin": {
-    "t-type": "./bin/cli.js"
+    "tenix": "./bin/cli.js"
   },
   "scripts": {
     "build": "tsc"
