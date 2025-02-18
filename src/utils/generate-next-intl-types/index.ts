@@ -49,7 +49,7 @@ export async function generateNextIntlTypes({output, plainTranslationKeys, trans
       const valuesNode = factory.createTypeLiteralNode(Object.entries(valuesObject).map(([property, propertyType]) => (
         factory.createPropertySignature(
           undefined,
-          property,
+          factory.createStringLiteral(property),
           undefined,
           argumentTypeToTsType(propertyType)
         )
@@ -82,7 +82,7 @@ export async function generateNextIntlTypes({output, plainTranslationKeys, trans
       const valuesNode = factory.createTypeLiteralNode(Object.entries(valuesObject).map(([property, propertyType]) => (
         factory.createPropertySignature(
           undefined,
-          property,
+          factory.createStringLiteral(property),
           undefined,
           argumentTypeToTsType(propertyType)
         )
