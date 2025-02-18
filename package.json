@@ -1,11 +1,12 @@
 {
   "name": "tenix",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "bin": {
     "tenix": "./bin/cli.js"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "publish": "cd ./bin/ && npm publish"
   },
   "keywords": [],
   "author": "Mikhail Grechka",
