@@ -1,14 +1,17 @@
 {
   "compilerOptions": {
+    "declaration": true,
     "outDir": "bin",
     "rootDir": "src",
     "module": "CommonJS",
-    "target": "ES2020",
+    "target": "esnext",
     "strict": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": true
   },
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "bin"]
 }

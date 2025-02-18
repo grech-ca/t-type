@@ -3,7 +3,7 @@ import { flattenNamespace, getNamespaceJson, extractArguments, generateNextIntlT
 import { ArgumentType } from "../enums"
 
 type GenerateMessageFormatTypesParams = {
-  mainLocalePath: string
+  source: string
   output?: string
 }
 
@@ -11,8 +11,8 @@ type GenerateMessageFormatTypesParams = {
 // TODO: Generate types for markup texts
 // TODO: Handle key type in t-function returned from the (use|get)Translations function with a namespace passed
 
-export async function generateMessageFormatTypes({mainLocalePath, output}: GenerateMessageFormatTypesParams) {
-  const namespace = getNamespaceJson(mainLocalePath)
+export async function generateMessageFormatTypes({source, output}: GenerateMessageFormatTypesParams) {
+  const namespace = getNamespaceJson(source)
 
   const plainTranslationKeys: string[] = []
   const translationKeyParams: Record<string, Record<string, Exclude<ArgumentType, ArgumentType.Rich>>> = {}
