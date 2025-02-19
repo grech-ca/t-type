@@ -1,6 +1,6 @@
 {
   "name": "tenix",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "types": "./bin/index.d.ts",
   "bin": {
     "tenix": "./bin/cli.js"

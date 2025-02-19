@@ -6,7 +6,14 @@ export function argumentTypeToTsType(argumentType: ArgumentType) {
 
   switch (argumentType) {
     case ArgumentType.String:
-      token = ts.factory.createToken(ts.SyntaxKind.StringKeyword)
+      token = ts.factory.createUnionTypeNode([
+        ts.factory.createToken(ts.SyntaxKind.StringKeyword),
+        ts.factory.createToken(ts.SyntaxKind.NumberKeyword),
+        ts.factory.createToken(ts.SyntaxKind.BooleanKeyword),
+        ts.factory.createToken(ts.SyntaxKind.UndefinedKeyword),
+        ts.factory.createTypeReferenceNode('null'),
+        ts.factory.createTypeReferenceNode('Date')
+      ])
       break
     case ArgumentType.Number:
       token = ts.factory.createToken(ts.SyntaxKind.NumberKeyword)
