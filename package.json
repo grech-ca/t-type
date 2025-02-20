@@ -8,10 +8,25 @@
   "scripts": {
     "build": "tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "type-generation",
+    "localization",
+    "l10n",
+    "i18n",
+    "next-intl",
+    "translations",
+    "localization-types",
+    "intl",
+    "internationalization",
+    "cli",
+    "automation",
+    "codegen",
+    "developer-tools"
+  ],
   "author": "Mikhail Grechka",
   "license": "MIT",
-  "description": "",
+  "description": "CLI tool for generating TypeScript types from JSON localization files, ensuring type-safe internationalization with next-intl.",
   "devDependencies": {
     "@types/node": "^22.13.1",
     "@types/react": "^19.0.8",
