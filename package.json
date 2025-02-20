@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "Mikhail Grechka",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "@types/node": "^22.13.1",
