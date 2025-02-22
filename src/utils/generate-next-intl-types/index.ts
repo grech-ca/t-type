@@ -3,7 +3,7 @@ import path from 'path'
 import {factory, SyntaxKind, NodeFlags, createPrinter} from 'typescript'
 import { ArgumentType } from '../../enums'
 import { argumentTypeToTsType } from './argument-type-to-ts-type'
-import {Identifiers} from './identifiers'
+import {Identifiers} from '../identifiers'
 import { createImportNode } from '../create-import-node'
 
 export type GenerateNextIntlTypesParams = {
